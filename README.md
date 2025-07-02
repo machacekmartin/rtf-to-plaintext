@@ -1,4 +1,4 @@
-# RTF Extractor
+# RTF to Plaintext
 
 This is a Perl script that extracts plain text from RTF input.
 
