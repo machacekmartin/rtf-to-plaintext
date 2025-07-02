@@ -170,11 +170,10 @@ sub extract {
     $flush_hex_buffer->();
 
     my $result = join('', @out);
-    $result =~ s/^\s+//;  # Remove leading whitespace
+    $result =~ s/^\s+//;
     return $result;
 }
 
-# Read full STDIN
 my $input = $ARGV[0];
 
 print extract($input);
