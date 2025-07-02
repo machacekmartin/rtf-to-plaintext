@@ -1,7 +1,9 @@
 # RTF Extractor
 
 This is a Perl script that extracts plain text from RTF input.
-I made this script to extract RTF into plaintext while keeping czech special characters (accents characters, etc), so your specific usecase results may vary.
+
+# Why does this exist
+Every tool I used failed to extract my input properly, f.e. missing new lines, wrong czech characters extraction (accents), extra rtf blocks that were supposed to be ignored... 
 
 ## Usage
 
