@@ -170,10 +170,15 @@ sub extract {
     $flush_hex_buffer->();
 
     my $result = join('', @out);
+
     $result =~ s/^\s+//;
+    $result =~ s/\s+$//;
+
     return $result;
 }
 
 my $input = $ARGV[0];
+
+$input =~ s/\\n(?![a-z])/ /g;
 
 print extract($input);
