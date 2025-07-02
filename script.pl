@@ -177,4 +177,4 @@ sub extract {
 # Read full STDIN
 my $input = $ARGV[0];
 
-print extract($input), "\n";
+print extract($input);
